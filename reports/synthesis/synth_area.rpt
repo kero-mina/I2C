@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : area
+Design : i2c_master_top
+Version: G-2012.06-SP2
+Date   : Sat Jan 28 09:49:04 2017
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary_ss0p95v125c (File: /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95v125c.db)
+
+Number of ports:                           35
+Number of nets:                           305
+Number of cells:                          237
+Number of combinational cells:            182
+Number of sequential cells:                54
+Number of macros:                           0
+Number of buf/inv:                         84
+Number of references:                      24
+
+Combinational area:        590.786002
+Buf/Inv area:              153.482000
+Noncombinational area:     810.502022
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          1401.288025
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ------------------------------
+i2c_master_top                    1401.2880    100.0  182.4760   280.0980  0.0000  i2c_master_top
+byte_controller                    938.7140     67.0  102.1440   135.6600  0.0000  i2c_master_byte_ctrl
+byte_controller/bit_controller     700.9100     50.0  232.7500   394.7440  0.0000  i2c_master_bit_ctrl
+byte_controller/bit_controller/sub_228
+                                    39.1020      2.8   39.1020     0.0000  0.0000  i2c_master_bit_ctrl_DW01_dec_1
+byte_controller/bit_controller/sub_260
+                                    34.3140      2.4   34.3140     0.0000  0.0000  i2c_master_bit_ctrl_DW01_dec_0
+--------------------------------  ---------  -------  --------  ---------  ------  ------------------------------
+Total                                                 590.7860   810.5020  0.0000
+
+1

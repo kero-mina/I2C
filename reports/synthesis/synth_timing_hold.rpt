@@ -1,0 +1,327 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : i2c_master_top
+Version: G-2012.06-SP2
+Date   : Sat Jan 28 09:49:04 2017
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary_ss0p95v125c
+Wire Load Model Mode: top
+
+  Startpoint: byte_controller/bit_controller/dout_reg
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: byte_controller/bit_controller/dout_reg
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  byte_controller/bit_controller/dout_reg/CK (DFF_X1)     0.00       0.00 r
+  byte_controller/bit_controller/dout_reg/QN (DFF_X1)     0.19       0.19 r
+  byte_controller/bit_controller/U193/ZN (OAI22_X1)       0.04       0.23 f
+  byte_controller/bit_controller/dout_reg/D (DFF_X1)      0.01       0.24 f
+  data arrival time                                                  0.24
+
+  clock wb_clk_i (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  byte_controller/bit_controller/dout_reg/CK (DFF_X1)     0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.24
+
+
+  Startpoint: cr_reg[3] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: cr_reg[3] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  cr_reg[3]/CK (DFFR_X1)                   0.00       0.00 r
+  cr_reg[3]/QN (DFFR_X1)                   0.20       0.20 r
+  U126/ZN (OAI33_X1)                       0.04       0.24 f
+  cr_reg[3]/D (DFFR_X1)                    0.01       0.25 f
+  data arrival time                                   0.25
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  cr_reg[3]/CK (DFFR_X1)                   0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.25
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: ctr_reg[0] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: ctr_reg[0] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  ctr_reg[0]/CK (DFFR_X1)                  0.00       0.00 r
+  ctr_reg[0]/QN (DFFR_X1)                  0.20       0.20 r
+  U208/ZN (OAI22_X1)                       0.05       0.25 f
+  ctr_reg[0]/D (DFFR_X1)                   0.01       0.25 f
+  data arrival time                                   0.25
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  ctr_reg[0]/CK (DFFR_X1)                  0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.25
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: ctr_reg[1] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: ctr_reg[1] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  ctr_reg[1]/CK (DFFR_X1)                  0.00       0.00 r
+  ctr_reg[1]/QN (DFFR_X1)                  0.20       0.20 r
+  U209/ZN (OAI22_X1)                       0.05       0.25 f
+  ctr_reg[1]/D (DFFR_X1)                   0.01       0.25 f
+  data arrival time                                   0.25
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  ctr_reg[1]/CK (DFFR_X1)                  0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.25
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: ctr_reg[2] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: ctr_reg[2] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  ctr_reg[2]/CK (DFFR_X1)                  0.00       0.00 r
+  ctr_reg[2]/QN (DFFR_X1)                  0.20       0.20 r
+  U210/ZN (OAI22_X1)                       0.05       0.25 f
+  ctr_reg[2]/D (DFFR_X1)                   0.01       0.25 f
+  data arrival time                                   0.25
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  ctr_reg[2]/CK (DFFR_X1)                  0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.25
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: ctr_reg[4] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: ctr_reg[4] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  ctr_reg[4]/CK (DFFR_X1)                  0.00       0.00 r
+  ctr_reg[4]/QN (DFFR_X1)                  0.20       0.20 r
+  U211/ZN (OAI22_X1)                       0.05       0.25 f
+  ctr_reg[4]/D (DFFR_X1)                   0.01       0.25 f
+  data arrival time                                   0.25
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  ctr_reg[4]/CK (DFFR_X1)                  0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.25
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: ctr_reg[5] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: ctr_reg[5] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  ctr_reg[5]/CK (DFFR_X1)                  0.00       0.00 r
+  ctr_reg[5]/QN (DFFR_X1)                  0.20       0.20 r
+  U212/ZN (OAI22_X1)                       0.05       0.25 f
+  ctr_reg[5]/D (DFFR_X1)                   0.01       0.25 f
+  data arrival time                                   0.25
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  ctr_reg[5]/CK (DFFR_X1)                  0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.25
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: txr_reg[2] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: txr_reg[2] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  txr_reg[2]/CK (DFFR_X1)                  0.00       0.00 r
+  txr_reg[2]/QN (DFFR_X1)                  0.20       0.20 r
+  U203/ZN (OAI22_X1)                       0.05       0.25 f
+  txr_reg[2]/D (DFFR_X1)                   0.01       0.25 f
+  data arrival time                                   0.25
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  txr_reg[2]/CK (DFFR_X1)                  0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.25
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: txr_reg[4] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: txr_reg[4] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  txr_reg[4]/CK (DFFR_X1)                  0.00       0.00 r
+  txr_reg[4]/QN (DFFR_X1)                  0.20       0.20 r
+  U204/ZN (OAI22_X1)                       0.05       0.25 f
+  txr_reg[4]/D (DFFR_X1)                   0.01       0.25 f
+  data arrival time                                   0.25
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  txr_reg[4]/CK (DFFR_X1)                  0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.25
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: cr_reg[2] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: cr_reg[2] (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2c_master_top     5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  cr_reg[2]/CK (DFFR_X1)                   0.00       0.00 r
+  cr_reg[2]/QN (DFFR_X1)                   0.20       0.20 r
+  U200/ZN (OAI22_X1)                       0.05       0.25 f
+  cr_reg[2]/D (DFFR_X1)                    0.01       0.25 f
+  data arrival time                                   0.25
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  cr_reg[2]/CK (DFFR_X1)                   0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.25
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+1

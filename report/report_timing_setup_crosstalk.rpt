@@ -1,0 +1,90 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -crosstalk_delta
+Design : i2c_master_top
+Version: G-2012.06-ICC-SP2
+Date   : Fri Jan 27 09:49:32 2017
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary_ss0p95v125c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 125/125/125
+
+Information: Percent of Arnoldi-based delays =  0.00%
+
+  Startpoint: wb_rst_i (input port clocked by wb_clk_i)
+  Endpoint: byte_controller/bit_controller/cnt_reg_1_
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Point                                        Delta      Incr       Path
+  --------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                              0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  input external delay                                    2.40       2.40 f
+  wb_rst_i (in)                                           0.00       2.40 f
+  U33/A (CLKBUF_X1)                             0.00      0.00 &     2.40 f
+  U33/Z (CLKBUF_X1)                                       0.10       2.51 f
+  byte_controller/rst_hfs_netlink_14 (i2c_master_byte_ctrl)
+                                                          0.00       2.51 f
+  byte_controller/U20/A (CLKBUF_X1)             0.00      0.00 &     2.51 f
+  byte_controller/U20/Z (CLKBUF_X1)                       0.15       2.66 f
+  byte_controller/U19/A (INV_X1)                0.00      0.00 &     2.66 f
+  byte_controller/U19/ZN (INV_X1)                         0.10       2.75 r
+  byte_controller/bit_controller/rst_hfs_netlink_5 (i2c_master_bit_ctrl)
+                                                          0.00       2.75 r
+  byte_controller/bit_controller/U283/A (CLKBUF_X1)
+                                                0.00      0.00 &     2.75 r
+  byte_controller/bit_controller/U283/Z (CLKBUF_X1)       0.13       2.89 r
+  byte_controller/bit_controller/U250/A4 (NAND4_X1)
+                                                0.00      0.00 &     2.89 r
+  byte_controller/bit_controller/U250/ZN (NAND4_X1)       0.12       3.01 f
+  byte_controller/bit_controller/U233/A (CLKBUF_X1)
+                                                0.00      0.00 &     3.01 f
+  byte_controller/bit_controller/U233/Z (CLKBUF_X1)       0.15       3.16 f
+  byte_controller/bit_controller/U46/A2 (OR2_X1)
+                                                0.00      0.00 &     3.16 f
+  byte_controller/bit_controller/U46/ZN (OR2_X1)          0.23       3.40 f
+  byte_controller/bit_controller/U228/A (INV_X1)
+                                                0.00      0.00 &     3.40 f
+  byte_controller/bit_controller/U228/ZN (INV_X1)         0.10       3.50 r
+  byte_controller/bit_controller/U29/A1 (OR2_X1)
+                                                0.00      0.00 &     3.50 r
+  byte_controller/bit_controller/U29/ZN (OR2_X1)          0.14       3.64 r
+  byte_controller/bit_controller/U257/A (INV_X1)
+                                                0.00      0.00 &     3.64 r
+  byte_controller/bit_controller/U257/ZN (INV_X1)         0.07       3.71 f
+  byte_controller/bit_controller/U110/B2 (AOI222_X1)
+                                                0.00      0.00 &     3.71 f
+  byte_controller/bit_controller/U110/ZN (AOI222_X1)      0.38       4.09 r
+  byte_controller/bit_controller/U109/A (INV_X1)
+                                                0.00      0.00 &     4.09 r
+  byte_controller/bit_controller/U109/ZN (INV_X1)         0.04       4.13 f
+  byte_controller/bit_controller/cnt_reg_1_/D (DFFR_X1)
+                                                0.00      0.00 &     4.13 f
+  data arrival time                                                  4.13
+
+  clock wb_clk_i (rise edge)                              6.00       6.00
+  clock network delay (propagated)                        0.34       6.34
+  clock uncertainty                                      -0.20       6.14
+  byte_controller/bit_controller/cnt_reg_1_/CK (DFFR_X1)
+                                                          0.00       6.14 r
+  library setup time                                     -0.14       6.00
+  data required time                                                 6.00
+  --------------------------------------------------------------------------
+  data required time                                                 6.00
+  data arrival time                                                 -4.13
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.87
+
+
+1

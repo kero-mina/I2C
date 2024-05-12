@@ -1,0 +1,61 @@
+ 
+****************************************
+Report : clock tree
+Design : i2c_master_top
+Version: G-2012.06-ICC-SP2
+Date   : Fri Jan 27 09:20:01 2017
+****************************************
+
+Global Settings for clock trees
+-------------------------------
+Top Mode: False
+Logic Level Balance: False
+OCV Aware Clustering: False
+OCV Path Sharing: False
+Target skew: 0.000000
+Target early delay: 0.000000
+Max buffer levels: 200.000000
+Max transition: 0.500000
+Max capacitance: 600.000000
+Max fanout: 2000
+Buffer relocation: Yes
+Buffer sizing: Yes
+Gate relocation: Yes
+Gate sizing: No
+Config file read: None
+Config file write: None
+Use default routing rule for sinks: Yes, for bottom level
+ ---------- All nets use DEFAULT routing rule ----------
+ -------------------------------------------------------
+
+Clock Tree Settings for clock wb_clk_i at root pin wb_clk_i
+Target skew: 0.100000
+Target early delay: 0.100000
+Max buffer levels: 200
+Max transition: 0.300000
+Max capacitance: 300.000000
+Max fanout: 4
+Buffer relocation: Yes
+Buffer sizing: Yes
+Gate relocation: Yes
+Gate sizing: Yes
+
+Nets with nondefault routing rules for clock wb_clk_i at root pin wb_clk_i:
+wb_clk_i :   my_route_rule
+ ---------- All other nets use DEFAULT routing rule -----------
+
+Layers Available for Clock Routing {
+    "metal3"
+    "metal4"
+    "metal5"
+     and all layers in between min and max layers if applicable.
+}
+Buffers Available for Clock Tree Synthesis {
+    "NangateOpenCellLibrary_ss0p95v125c/BUF_X1"  ( maxTrans: 0.500     , maxLoad: 60.631    , maxFanout: 4       )
+    "NangateOpenCellLibrary_ff1p25vn40c/BUF_X1"  ( maxTrans: 0.125     , maxLoad: 60.654    , maxFanout: 4       )
+    "NangateOpenCellLibrary_ss0p95v125c/BUF_X2"  ( maxTrans: 0.500     , maxLoad: 121.101   , maxFanout: 4       )
+    "NangateOpenCellLibrary_ff1p25vn40c/BUF_X2"  ( maxTrans: 0.125     , maxLoad: 121.155   , maxFanout: 4       )
+}
+Inverters Available for Clock Tree Synthesis {
+}
+1

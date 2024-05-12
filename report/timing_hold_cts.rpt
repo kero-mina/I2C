@@ -1,0 +1,299 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : i2c_master_top
+Version: G-2012.06-ICC-SP2
+Date   : Fri Jan 27 09:25:44 2017
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary_ss0p95v125c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRVirtualC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 125/125/125
+
+  Startpoint: cr_reg_4_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: tip_reg (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (propagated)         0.27       0.27
+  cr_reg_4_/CK (DFFR_X1)                   0.00       0.27 r
+  cr_reg_4_/QN (DFFR_X1)                   0.25       0.52 r
+  U285/ZN (AOI21_X1)                       0.06 *     0.57 f
+  tip_reg/D (DFFR_X1)                      0.00 *     0.57 f
+  data arrival time                                   0.57
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (propagated)         0.34       0.34
+  tip_reg/CK (DFFR_X1)                     0.00       0.34 r
+  library hold time                        0.03       0.37
+  data required time                                  0.37
+  -----------------------------------------------------------
+  data required time                                  0.37
+  data arrival time                                  -0.57
+  -----------------------------------------------------------
+  slack (MET)                                         0.20
+
+
+  Startpoint: byte_controller/bit_controller/dout_reg
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: byte_controller/bit_controller/dout_reg
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                              0.00       0.00
+  clock network delay (propagated)                        0.33       0.33
+  byte_controller/bit_controller/dout_reg/CK (DFF_X1)     0.00       0.33 r
+  byte_controller/bit_controller/dout_reg/QN (DFF_X1)     0.22       0.55 r
+  byte_controller/bit_controller/U193/ZN (OAI22_X1)       0.03 *     0.58 f
+  byte_controller/bit_controller/dout_reg/D (DFF_X1)      0.00 *     0.58 f
+  data arrival time                                                  0.58
+
+  clock wb_clk_i (rise edge)                              0.00       0.00
+  clock network delay (propagated)                        0.33       0.33
+  byte_controller/bit_controller/dout_reg/CK (DFF_X1)     0.00       0.33 r
+  library hold time                                       0.02       0.35
+  data required time                                                 0.35
+  --------------------------------------------------------------------------
+  data required time                                                 0.35
+  data arrival time                                                 -0.58
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.23
+
+
+  Startpoint: cr_reg_2_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: cr_reg_2_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (propagated)         0.27       0.27
+  cr_reg_2_/CK (DFFR_X1)                   0.00       0.27 r
+  cr_reg_2_/QN (DFFR_X1)                   0.23       0.50 r
+  U200/ZN (OAI22_X1)                       0.03 *     0.53 f
+  cr_reg_2_/D (DFFR_X1)                    0.00 *     0.53 f
+  data arrival time                                   0.53
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (propagated)         0.27       0.27
+  cr_reg_2_/CK (DFFR_X1)                   0.00       0.27 r
+  library hold time                        0.03       0.30
+  data required time                                  0.30
+  -----------------------------------------------------------
+  data required time                                  0.30
+  data arrival time                                  -0.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.24
+
+
+  Startpoint: ctr_reg_2_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: ctr_reg_2_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (propagated)         0.32       0.32
+  ctr_reg_2_/CK (DFFR_X1)                  0.00       0.32 r
+  ctr_reg_2_/QN (DFFR_X1)                  0.23       0.55 r
+  U210/ZN (OAI22_X1)                       0.03 *     0.58 f
+  ctr_reg_2_/D (DFFR_X1)                   0.00 *     0.58 f
+  data arrival time                                   0.58
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (propagated)         0.32       0.32
+  ctr_reg_2_/CK (DFFR_X1)                  0.00       0.32 r
+  library hold time                        0.02       0.34
+  data required time                                  0.34
+  -----------------------------------------------------------
+  data required time                                  0.34
+  data arrival time                                  -0.58
+  -----------------------------------------------------------
+  slack (MET)                                         0.24
+
+
+  Startpoint: ctr_reg_3_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: ctr_reg_3_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (propagated)         0.32       0.32
+  ctr_reg_3_/CK (DFFR_X1)                  0.00       0.32 r
+  ctr_reg_3_/QN (DFFR_X1)                  0.23       0.55 r
+  U216/ZN (OAI22_X1)                       0.04 *     0.58 f
+  ctr_reg_3_/D (DFFR_X1)                   0.00 *     0.58 f
+  data arrival time                                   0.58
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (propagated)         0.32       0.32
+  ctr_reg_3_/CK (DFFR_X1)                  0.00       0.32 r
+  library hold time                        0.02       0.34
+  data required time                                  0.34
+  -----------------------------------------------------------
+  data required time                                  0.34
+  data arrival time                                  -0.58
+  -----------------------------------------------------------
+  slack (MET)                                         0.24
+
+
+  Startpoint: byte_controller/sr_reg_1_
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: byte_controller/sr_reg_2_
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                              0.00       0.00
+  clock network delay (propagated)                        0.30       0.30
+  byte_controller/sr_reg_1_/CK (DFFR_X1)                  0.00       0.30 r
+  byte_controller/sr_reg_1_/QN (DFFR_X1)                  0.23       0.53 r
+  byte_controller/U46/ZN (OAI221_X1)                      0.08 *     0.61 f
+  byte_controller/sr_reg_2_/D (DFFR_X1)                   0.00 *     0.61 f
+  data arrival time                                                  0.61
+
+  clock wb_clk_i (rise edge)                              0.00       0.00
+  clock network delay (propagated)                        0.35       0.35
+  byte_controller/sr_reg_2_/CK (DFFR_X1)                  0.00       0.35 r
+  library hold time                                       0.02       0.37
+  data required time                                                 0.37
+  --------------------------------------------------------------------------
+  data required time                                                 0.37
+  data arrival time                                                 -0.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.24
+
+
+  Startpoint: ctr_reg_5_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: ctr_reg_5_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (propagated)         0.32       0.32
+  ctr_reg_5_/CK (DFFR_X1)                  0.00       0.32 r
+  ctr_reg_5_/QN (DFFR_X1)                  0.23       0.55 r
+  U212/ZN (OAI22_X1)                       0.04 *     0.59 f
+  ctr_reg_5_/D (DFFR_X1)                   0.00 *     0.59 f
+  data arrival time                                   0.59
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (propagated)         0.32       0.32
+  ctr_reg_5_/CK (DFFR_X1)                  0.00       0.32 r
+  library hold time                        0.02       0.34
+  data required time                                  0.34
+  -----------------------------------------------------------
+  data required time                                  0.34
+  data arrival time                                  -0.59
+  -----------------------------------------------------------
+  slack (MET)                                         0.24
+
+
+  Startpoint: byte_controller/bit_controller/busy_reg
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: byte_controller/bit_controller/busy_reg
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                              0.00       0.00
+  clock network delay (propagated)                        0.33       0.33
+  byte_controller/bit_controller/busy_reg/CK (DFFR_X1)
+                                                          0.00       0.33 r
+  byte_controller/bit_controller/busy_reg/QN (DFFR_X1)
+                                                          0.23       0.55 r
+  byte_controller/bit_controller/U178/ZN (AOI211_X1)      0.04 *     0.59 f
+  byte_controller/bit_controller/busy_reg/D (DFFR_X1)     0.00 *     0.59 f
+  data arrival time                                                  0.59
+
+  clock wb_clk_i (rise edge)                              0.00       0.00
+  clock network delay (propagated)                        0.33       0.33
+  byte_controller/bit_controller/busy_reg/CK (DFFR_X1)
+                                                          0.00       0.33 r
+  library hold time                                       0.03       0.35
+  data required time                                                 0.35
+  --------------------------------------------------------------------------
+  data required time                                                 0.35
+  data arrival time                                                 -0.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.24
+
+
+  Startpoint: ctr_reg_0_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: ctr_reg_0_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (propagated)         0.34       0.34
+  ctr_reg_0_/CK (DFFR_X1)                  0.00       0.34 r
+  ctr_reg_0_/QN (DFFR_X1)                  0.22       0.56 r
+  U208/ZN (OAI22_X1)                       0.04 *     0.60 f
+  ctr_reg_0_/D (DFFR_X1)                   0.00 *     0.60 f
+  data arrival time                                   0.60
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (propagated)         0.34       0.34
+  ctr_reg_0_/CK (DFFR_X1)                  0.00       0.34 r
+  library hold time                        0.02       0.35
+  data required time                                  0.35
+  -----------------------------------------------------------
+  data required time                                  0.35
+  data arrival time                                  -0.60
+  -----------------------------------------------------------
+  slack (MET)                                         0.24
+
+
+  Startpoint: ctr_reg_1_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: ctr_reg_1_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (propagated)         0.34       0.34
+  ctr_reg_1_/CK (DFFR_X1)                  0.00       0.34 r
+  ctr_reg_1_/QN (DFFR_X1)                  0.22       0.56 r
+  U209/ZN (OAI22_X1)                       0.04 *     0.60 f
+  ctr_reg_1_/D (DFFR_X1)                   0.00 *     0.60 f
+  data arrival time                                   0.60
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (propagated)         0.34       0.34
+  ctr_reg_1_/CK (DFFR_X1)                  0.00       0.34 r
+  library hold time                        0.02       0.35
+  data required time                                  0.35
+  -----------------------------------------------------------
+  data required time                                  0.35
+  data arrival time                                  -0.60
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+1
